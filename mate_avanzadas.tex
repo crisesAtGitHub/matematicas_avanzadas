@@ -1,0 +1,143 @@
+\documentclass[landscape]{article}
+\usepackage{forest}
+	\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm,a0paper]{geometry}
+    \usepackage{tikz}
+    \usetikzlibrary{graphs,quotes}
+	\usetikzlibrary{arrows}
+
+\tikzset{
+  treenode/.style = {align=center, inner sep=0pt, text centered,
+    font=\sffamily},
+  arn_n/.style = {treenode, circle, white, font=\sffamily\bfseries, draw=black,
+    fill=black, text width=3em},% arbre rouge noir, noeud noir
+  arn_r/.style = {treenode, circle, red, draw=red, 
+    text width=1.5em, very thick},% arbre rouge noir, noeud rouge
+  arn_x/.style = {treenode, rectangle, draw=black,
+    minimum width=0.5em, minimum height=0.5em}% arbre rouge noir, nil
+}
+
+\begin{document}
+    
+    \begin{forest}
+for tree={%
+    l sep=1cm,
+    s sep=0.2cm,
+    minimum height=0.8cm,
+    minimum width=1cm,
+    draw %Put lines around each
+    },
+        box/.style={rounded corners, draw, fill=gray!20},
+        line/.style={draw, thick, <-}
+        test/.style n args={3}{align=center, content={#1 \\#2 \\#3}}
+    [LOS ANIMALES, box [Se clasifican por[FORMA, box[Pueden ser[Redondos,circle,draw[Como[Los erizos de mar, box]]][Alargados,circle,draw[Como[Lagartos, box]]][Sin patas,circle,draw[Como[Caracol\textrm{,} lombriz, box]]][Con muchas patas,circle,draw[Como[Cien pies,box]]]]][ALIMENTACI\'ON,box[Pueden ser[Herb\'ivoros, circle, draw[Se alimentan de[Plantas,box]]][Carn\'ivoros, circle, draw[Se alimentan de[Otros animales,box]]][Omn\'ivoros,circle, draw[Se alimentan de[Plantas y otros animales,box]]][Mam\'iferos,circle,draw[Se alimentan de[Leche,box]]]]][TAMA\~NO,box[Pueden ser[Grandes,circle,draw[Como[Elefant\\Cebra Rinoceronte, box]]][Peque\~nos,circle,draw[Como[,box,]]]]]]]
+    \end{forest}
+    \newpage
+    \begin{forest}
+    for tree={%
+    l sep=1cm,
+    s sep=0.2cm,
+    minimum height=0.8cm,
+    minimum width=1cm,
+    draw %Put lines around each
+    },
+        box/.style={rounded corners, draw, fill=gray!20},
+        line/.style={draw, thick, <-}
+        test/.style n args={3}{align=center, content={#1 \\#2 \\#3}}
+        [Matem\'aticas Avanzadas para la Ingenier\'ia, box
+			[Variable compleja,circle]
+			[Series de Fourier,circle]
+			[Transformadas Integrales,circle]        
+        ]
+    \end{forest}
+    \newpage
+\begin{forest}[
+	[funci\'on impulso unitario]
+	[funciones peri\'odicas]
+	[transformada r\'apida de fourier]
+	[transformada discreta de fourier]
+	[transformada z]
+	[transformada z discreta]
+	[ecuaciones en diferencias]
+	[convoluci\'on circular]
+	[delta dirac]
+	[escal\'on unitario (funci\'on de Heaviside)]
+	[exponenciales complejas]
+	[convoluci\'on en $\ell^2$
+		[conmutativa]
+		[distributiva]
+		[Asociativa]
+		[funciones en $\ell^1$]	
+	]
+	[funciones en $L^2$]
+	[transformada de Fourier
+		[propiedades]	
+	]
+	[Sucesiones de funciones]
+	[funciones ortogonales]
+	[coeficientes de fourier]
+	[desigualdad de Cauchy-Schwartz]
+	[Forma compleja de la serie de Fourier]
+	[f\'ormula de De' Moivre]
+	[serie de fourier trigonom\'etrica]
+	[teorema de parseval]
+	[pulso rectangular]
+	[pulso triangular]
+	[convergencia de la serie de Fourier]
+	[teorema de parseval]
+	[c\'alculo de transformadas]
+	[convoluci\'on en el tiempo discreto]
+	[Transformada de Fourier funci\'on impulso]
+	[convergencia de serie de Fourier]
+]
+\end{forest}
+
+\begin{enumerate}
+\item 	funci\'on impulso unitario
+\item	funciones peri\'odicas
+\item	transformada r\'apida de fourier
+\item	transformada discreta de fourier
+\item	transformada z
+\item	transformada z discreta
+\item	ecuaciones en diferencias
+\item	convoluci\'on circular
+\item	delta dirac
+\item   escal\'on unitario (funci\'on de Heaviside)
+\item	exponenciales complejas
+\item	convoluci\'on en $\ell^2$
+\item		conmutativa
+\item		distributiva
+\item		Asociativa
+\item		funciones en $\ell^1$
+\item	funciones en $L^2$
+\item	transformada de Fourier
+\item		propiedades
+	\begin{enumerate}
+		\item Desplazamiento en el tiempo
+		\item Desplazamiento de frecuencia
+		\item Derivaci\'on en integraci\'on
+		\item 
+	\end{enumerate}		
+\item	Sucesiones de funciones
+\item	funciones ortogonales
+\item	coeficientes de fourier
+\item	desigualdad de Cauchy-Schwartz
+\item	Forma compleja de la serie de Fourier
+\item	f\'ormula de De' Moivre
+\item	serie de fourier trigonom\'etrica
+\item	teorema de parseval
+\item	pulso rectangular
+\item	pulso triangular
+\item	convergencia de la serie de Fourier
+\item	teorema de parseval
+\item	c\'alculo de transformadas
+\item	convoluci\'on en el tiempo discreto
+\item 	Convoluci\'on en el tiempo
+\item 	Convoluci\'on en frecuencia
+\item   Interpretaci\'on gr\'afica de la convoluci\'on
+\item	Transformada de Fourier funci\'on impulso
+\item	convergencia de serie de Fourier
+\item   transformada r\'apida de fourier
+\end{enumerate}
+
+
+\end{document}
